@@ -36,27 +36,13 @@ Natural numeric output (0, 1, 2, ... units)
 
 ## System Architecture
 
-Data Input (CSV) 
-    ↓
-Data Preprocessing (Merge, Feature Engineering, Train/Test Split)
-    ↓
-ML Models (LightGBM, XGBoost, Random Forest, SVR)
-    ↓
-Ensemble Model (Weighted Average)
-    ↓
-Evaluation (RMSE, WMAPE, R²)
-    ↓
-7-Day Demand Forecasting
-    ↓
-Inventory Management (Safety Stock Rules)
-    ↓
-Output (Forecasts + Status Flags: CRITICAL LOW, LOW STOCK, OK, OVERSTOCK)
+Data Input (CSV) -> Data Preprocessing (Merge, Feature Engineering, Train/Test Split) -> ML Models (LightGBM, XGBoost, Random Forest, SVR) -> Ensemble Model (Weighted Average) -> Evaluation (RMSE, WMAPE, R²) -> 7-Day Demand Forecasting -> Inventory Management (Safety Stock Rules) -> Output (Forecasts + Status Flags: CRITICAL LOW, LOW STOCK, OK, OVERSTOCK)
 
 ## Machine Learning Models used
 
-LightGBM
-Support Vector Regression (SVR)
-Complementary Models: XGBoost & Random Forest
+LightGBM;
+Support Vector Regression (SVR);
+Complementary Models: XGBoost & Random Forest;
 Ensemble Strategy
 
 ## Feature Engineering Strategy
